@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply w-full;
+  background: url("../images/recruiting/bg.png") no-repeat;
+  background-size: cover;
+}
+
+.main {
+  @apply flex flex-col items-center py-16 md:mx-0 mx-2 text-white;
+}
+
+.main > h1 {
+  @apply text-4xl font-bold text-[#565656];
+}
+
+.main > a {
+  background-image: url("../images/recruiting/btn.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  @apply min-w-[180px] min-h-[38px] my-12 flex items-center justify-center font-black text-white;
+}
+
+.main > p {
+  text-shadow: 0 0 0.4rem #3a9ecf, 0 0 0.4rem #3a9ecf, 0 0 0.4rem #3a9ecf;
+  @apply text-xl;
+}
+
+.main > h2 {
+  @apply text-4xl font-black text-[#4f73f6] my-16;
+}
+
+.img-wrapper {
+  @apply w-full my-16  flex md:flex-nowrap flex-wrap items-center justify-center;
+}
+
+.img-wrapper > img {
+  @apply md:w-1/4 w-auto;
+}

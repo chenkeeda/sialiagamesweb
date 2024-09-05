@@ -1,0 +1,59 @@
+@font-face {
+  font-family: NotoSans;
+  src: url("../font/NotoSansCJK-Regular.ttc");
+}
+
+body {
+  font-family: NotoSans;
+}
+a {
+  color: blue;
+}
+header {
+  @apply flex items-center lg:px-8 px-2 py-2;
+}
+
+.logo > img {
+  @apply md:h-auto h-16;
+}
+
+header > nav {
+  @apply md:block md:mx-auto 2xl:text-2xl xl:text-xl lg:text-lg text-white;
+  @apply max-md:transition max-md:fixed max-md:text-black max-md:bg-white 
+  max-md:left-0 max-md:top-0 max-md:z-40 max-md:w-full max-md:h-full max-md:pt-16
+  max-md:text-2xl;
+}
+
+header > nav > a {
+  /* @apply md:hover:text-black; */
+  @apply md:hover:text-blue-500;
+  @apply max-md:block max-md:hover:text-[#4f73f6] max-md:py-4 max-md:pl-8 max-md:border-b;
+}
+
+header > nav > a::after {
+  content: "/";
+  @apply text-white hover:text-white 2xl:px-8 xl:px-4 lg:px-2;
+  @apply max-md:hidden;
+}
+
+header > nav > a:last-child::after {
+  content: "";
+}
+
+.menu-wrapper {
+  @apply z-50 md:hidden block box-content w-12 h-12 p-1 ml-auto mr-4 bg-white rounded-sm max-md:shadow-none shadow-md;
+}
+
+.mobile-menu {
+  content: "";
+  mask: url("../images/menu.svg") no-repeat center center;
+  mask-size: contain;
+  @apply transition w-12 h-12 bg-[#4f73f6];
+}
+
+.mobile-menu-close {
+  content: "";
+  mask: url("../images/close.svg") no-repeat center center;
+  mask-size: contain;
+  @apply transition w-12 h-12 bg-[#4f73f6];
+}

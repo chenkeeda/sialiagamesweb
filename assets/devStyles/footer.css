@@ -1,0 +1,27 @@
+footer {
+  @apply w-full md:h-20 lg:px-20 md:px-2 md:py-0 py-2 bg-[#4f73f6] text-white flex items-center lg:flex-nowrap flex-wrap;
+}
+
+footer > img {
+  @apply lg:inline-block block md:w-auto w-full h-14 box-border p-2 mr-4;
+}
+
+.copyright {
+  @apply md:w-auto w-full md:text-left text-center text-xs mt-4;
+}
+
+.copyright > a {
+  @apply block hover:text-black;
+}
+
+footer > .right {
+  @apply md:w-auto w-full md:text-left text-center md:mt-0 mt-4 ml-auto lg:text-base text-sm;
+}
+
+footer > .right > span:first-child {
+  @apply sm:inline-block sm:mb-0 mb-2 block mr-4;
+}
+
+footer a {
+  @apply hover:text-black;
+}

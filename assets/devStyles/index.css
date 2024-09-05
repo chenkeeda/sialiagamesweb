@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply w-full h-full;
+}
+
+body {
+  @apply w-full h-full overflow-hidden;
+  background: url("../images/home/bg.png") no-repeat;
+  background-size: cover;
+}
+
+.main {
+  @apply absolute lg:w-auto w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.swiper-slide {
+  @apply pb-8 px-4;
+}
+
+.swiper-pagination-bullet {
+  @apply w-20 h-1 rounded-none bg-[#767676];
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-[#fece01];
+}

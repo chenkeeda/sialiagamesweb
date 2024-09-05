@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply h-full bg-[rgb(8,16,61)];
+}
+
+body {
+  @apply w-full h-full;
+  background: url("../images/vision/bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main{
+  min-height: calc(100% - 181px);
+}
+
+.title {
+  @apply pt-12 drop-shadow-md text-white text-center;
+}
+
+.title > h1 {
+  @apply md:leading-snug leading-tight md:text-4xl text-xl font-black italic;
+}
+
+.title > p {
+  text-shadow: 0 0 0.4rem #3a9ecf, 0 0 0.4rem #3a9ecf, 0 0 0.4rem #3a9ecf;
+}
+.title > p {
+  @apply md:text-2xl text-lg leading-relaxed;
+}
+
+.message {
+  @apply xl:mt-8 md:mt-4 mt-2 xl:pt-8 md:pt-12 pt-6 lg:mx-12 md:mx-16 flex items-center justify-center
+   text-white xl:text-2xl lg:text-lg md:text-base sm:text-base text-sm
+   md:flex-nowrap flex-wrap;
+}
+
+.message > img {
+  @apply xl:w-2/5 md:w-1/2 sm:w-4/5 w-full;
+}
+
+.introduce {
+  @apply sm:mx-0 mx-2 pb-12 leading-relaxed;
+}
+
+.introduce > p {
+  @apply sm:mb-0 mb-1;
+}
+
+.manager {
+  @apply flex items-center;
+}
+
+.manager > h1 {
+  @apply inline-block xl:text-4xl lg:text-2xl sm:text-xl text-lg font-black mr-8 my-4 italic;
+}
+
+.manager > span {
+  text-shadow: 0 0 0.6rem #3a9ecf, 0 0 0.6rem #3a9ecf, 0 0 0.6rem #3a9ecf;
+}
+.manager > span {
+  @apply xl:text-2xl lg:text-xl sm:text-base text-sm;
+}

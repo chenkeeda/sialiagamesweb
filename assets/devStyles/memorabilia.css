@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply w-full;
+  background: url("../images/memorabilia/bg.png") no-repeat;
+  background-size: cover;
+}
+
+.main {
+  @apply flex flex-col items-center justify-center pt-16 pb-40 mx-2;
+}
+
+.year-item {
+  @apply flex mt-10;
+}
+
+.year-number {
+  @apply relative;
+}
+
+.year-number > span {
+  @apply flex items-center justify-center -translate-y-2 lg:text-xl text-sm lg:w-16 lg:h-16 w-10 h-10 bg-[#4471FF] rounded-full text-white;
+}
+
+.year-number > .line {
+  @apply absolute left-1/2 -translate-x-1/2 lg:-translate-y-8 -translate-y-2 w-1 h-full bg-[#4471FF];
+}
+
+.year-events {
+  @apply lg:w-[800px] w-full bg-[#ABF0F1] py-4 pl-4 lg:pr-0 pr-4 lg:ml-16 sm:ml-8 ml-2;
+}
+
+.year-events > p {
+  @apply lg:leading-[48px] leading-10;
+}
+
+.year-events > p > b {
+  @apply inline-block w-10 ml-4 lg:mr-6 mr-0;
+}
+
+.year-events > p > a {
+  @apply -indent-1;
+}
