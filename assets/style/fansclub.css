@@ -24,7 +24,7 @@
 ::after {
   --tw-content: '';
 }
-.game-image {
+div.game img.game-image {
   display: block;
   width: 100%; /* Adjust as needed */
   border: 5px solid white; /* Blue border with 5px width */
