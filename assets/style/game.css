@@ -56,7 +56,12 @@ html {
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
-
+.game-image {
+  display: block;
+  width: 100%; /* Adjust as needed */
+  border: 5px solid blue; /* Blue border with 5px width */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
 body {
   margin: 0;
   /* 1 */

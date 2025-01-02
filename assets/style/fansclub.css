@@ -24,7 +24,12 @@
 ::after {
   --tw-content: '';
 }
-
+.game-image {
+  display: block;
+  width: 100%; /* Adjust as needed */
+  border: 5px solid white; /* Blue border with 5px width */
+  border-radius: 25%; /* Optional: Adds rounded corners */
+}
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
