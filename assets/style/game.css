@@ -58,6 +58,7 @@ html {
 */
 .game-image {
   display: block;
+  height: 320px;
   width: 100%; /* Adjust as needed */
   border: 3px solid rgb(63, 140, 202); /* Blue border with 5px width */
   border-radius: 8px; /* Optional: Adds rounded corners */
