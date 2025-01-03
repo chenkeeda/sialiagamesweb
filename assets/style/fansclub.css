@@ -26,8 +26,10 @@
 }
 div.game img.game-image {
   display: block;
-  width: 100%; /* Adjust as needed */
-  border: 5px solid white; /* Blue border with 5px width */
+  width: 296px; /* Set width to 296px */
+  height: 295px; /* Set height to 295px */
+ 
+  border: 4px solid white; /* Blue border with 5px width */
   border-radius: 25%; /* Optional: Adds rounded corners */
 }
 /*
