@@ -29,12 +29,12 @@ footer {
   }
 }
 
+
 footer > img {
-  display: block;
   width: 100%;
   height: auto;
-  box-sizing: border-box;
-  padding: 0.5rem;
+  max-height: 80px;       /* ⭐ 手機關鍵 */
+  object-fit: contain;
 }
 
 @media (min-width: 768px) {
